@@ -1,0 +1,70 @@
+html, body{
+    margin:0;
+    display: flex;
+    flex-direction: column;
+    background-color: blueviolet;
+}
+
+
+#containerPrincipal{
+    margin-top: 10%;
+    margin-bottom: 10%;
+    background-color: black;
+    float: left;
+}
+
+#containerInterno{
+    position: relative;
+    margin-top: 1.5%;
+    background-color: firebrick;
+    clear: both;
+    float: left;
+    margin-bottom: 1.5%;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.divObjeto{
+    width: 100%;
+    border: 2px solid black;
+    float: left;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    color: white;
+}
+
+div{
+    display: block;
+}
+
+#frmIngreso{
+    background-color: lightgoldenrodyellow;
+    border-bottom: 3px solid black;
+}
+
+#divInternoObjeto{
+    margin-left: 3%;
+}
+
+#cajasDatos input{
+    margin-right: 50%;
+    margin-top: 2%;
+    background-color: black;
+    color: white;
+}
+
+#btnEliminar{
+    background-color: black;
+    color: white;
+    float: right;
+}
+
+@media screen and (max-width: 500px){
+    #containerInterno{
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+    #imagen{
+        height: 200px;
+    }
+}
